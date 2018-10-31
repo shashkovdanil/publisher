@@ -1,0 +1,18 @@
+.is-multiple {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.is-multiple  img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.is-multiple  svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

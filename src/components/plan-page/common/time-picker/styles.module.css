@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  height: 30px;
+  width: 110px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10), 0 1px 10px 0 rgba(0,0,0,0.07);
+  border-radius: 3px;
+}
+
+.wrapper > div {
+  width: 50%;
+  height: 100%;
+}
+
+.wrapper > div:first-child > div {
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+  box-shadow: none;
+}
+
+.wrapper > div:first-child ul {
+  margin-right: -1px;
+}
+
+.wrapper > div:last-child > div {
+  border-radius: 0 3px 3px 0;
+  box-shadow: none;
+}

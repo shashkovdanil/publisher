@@ -1,0 +1,41 @@
+.slot {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  border: 1px dashed #cfcfcf;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: -1px 0 0 -1px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  transition: transform 0.15s ease-out;
+  outline: none;
+}
+
+.slot:active {
+  transform: scale(0.98);
+}
+
+.slot p {
+  margin: 0;
+}
+
+.slot svg {
+  margin-top: 12px;
+}
+
+.time {
+  font-family: var(--main-font-bold);
+}
+
+.title {
+  line-height: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .slot {
+    width: 100%;
+  }
+}

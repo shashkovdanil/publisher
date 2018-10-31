@@ -1,0 +1,184 @@
+.header {
+  height: 70px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-left: 20px;
+  background-color: var(--white);
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 70px;
+}
+
+.close {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 70px;
+  cursor: pointer;
+  background-color: var(--white);
+  transition: background-color .2s ease-in-out;
+}
+
+.close:hover {
+  background-color: #e3e3e3
+}
+
+.close:active {
+  background-color: var(--white);
+}
+
+.when-block {
+  display: flex;
+  margin: 16px 0 14px 20px;
+}
+
+.when {
+  align-items: center;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.date {
+  height: 30px;
+  background-color: var(--white);
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.10), 0 1px 10px 0 rgba(0,0,0,0.07);
+  padding: 0 10px;
+  line-height: 30px;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.at {
+  line-height: 30px;
+  font-size: 16px;
+  margin: 0 6px;
+}
+
+.utc {
+  font-size: 11px;
+  color: var(--secondary-color);
+  line-height: 30px;
+  margin-left: 9px;
+}
+
+.post {
+  margin: 0 20px;
+  display: flex;
+  height: 250px;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  background-color: var(--white);
+  border: 1px solid #e3e3e3;
+}
+
+.accounts {
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.accounts > div {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.accounts > div > * {
+  width: 40px;
+  height: 40px;
+}
+
+.not-selected {
+  opacity: 0.3;
+  border: none;
+}
+
+.is-selected {
+  box-sizing: content-box;
+  opacity: 1;
+  border: 2px solid #0cbd97;
+}
+
+.body {
+  width: 100%;
+  height: calc(100% - 80px);
+  border: none;
+  resize: none;
+  padding: 11px 20px;
+  letter-spacing: 0;
+  line-height: 23px;
+}
+
+.body::placeholder {
+  color: #cdcccc;
+}
+
+.buttons {
+  height: 50px;
+  margin: 40px 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  position: absolute;
+  margin-top: 55px;
+  margin-bottom: 5px;
+  color: red;
+  font-size: 12px;
+}
+
+.single-button {
+  justify-content: flex-end;
+}
+
+.remove-button {
+  background-color: #963636;
+  color: var(--white);
+}
+
+.remove-button:hover {
+  background-color: #8a3131;
+  color: var(--white);
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    height: 100vh;
+  }
+
+  .when-block {
+    align-items: center;
+  }
+
+  .when-block > div {
+    height: 40px;
+    width: 140px;
+  }
+
+  .when-block > div li {
+    padding: 16px 10px;
+  }
+
+  .when, .at {
+    display: none;
+  }
+
+  .date {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-left: 0;
+    padding-left: 0; 
+  }
+}

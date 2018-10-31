@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Stem';
+  src: url('./assets/fonts/STM55.woff2') format('woff2'), url('./assets/fonts/STM55.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stem Bold';
+  src: url('./assets/fonts/STM75.woff2') format('woff2'), url('./assets/fonts/STM75.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  outline: none;
+}
+
+:root {
+  font-size: 16px;
+  --main-font: 'Stem', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  --main-font-bold: 'Stem Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+  --white: #fff;
+  --black: #000;
+  --main-color: #2a2a2a;
+  --secondary-color: #a6a6a6;
+  --settings-bg-color: #373737;
+  --bg-color: #f5f5f5;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--main-font-bold);
+  color: var(--main-color);
+}
+
+p, span, div, li {
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-size: 16px;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: var(--main-color);
+}
+
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  transition: opacity 200ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  width: 600px;
+  height: 490px;
+  top: calc((100vh - 490px) / 2) !important;
+  left: calc((100vw - 600px) / 2) !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  padding: 0 !important;
+  background-color: var(--bg-color) !important;
+  z-index: 999999999;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: var(--main-color) !important;
+}
+
+@media screen and (max-width: 1023px) {
+  .ReactModal__Content {
+    width: 100%;
+    height: 490px;
+    top: calc((100vh - 490px) / 2) !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+  }
+}
+
+/* more info: components/day/with-modal.js */
+#modal__temp {
+  will-change: transform, opacity;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: transparent;
+	transform: none;
+	opacity: 1;
+	transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}

@@ -1,0 +1,55 @@
+.list {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  font-size: 13px;
+  color: var(--secondary-color);
+  line-height: 20px;
+}
+
+.item span {
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.icon-container {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container svg {
+  position: absolute;
+}
+
+.progress {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+@media screen and (max-width: 650px) {
+  .item {
+    margin-right: 8px;
+  }
+
+  .item span {
+    font-size: 12px;
+  }
+}
+

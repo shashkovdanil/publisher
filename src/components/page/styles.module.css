@@ -1,0 +1,129 @@
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.page aside {
+  width: 20%;
+  background-color: var(--settings-bg-color);
+}
+
+.page main {
+  width: 80%;
+}
+
+.is-mobile-settings {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .page aside {
+    display: none;
+  }
+
+  .page main {
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .is-mobile-settings {
+    z-index: 999;
+    background-color: var(--white);
+    position: fixed;
+    display: block;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(57, 63, 72, 0.3);
+    padding-left: 19px;
+    display: flex;
+    align-items: center;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .button {
+    background-color: var(--white);
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .background {
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 0.8rem;
+    left: 1.3rem;
+    background-color: var(--settings-bg-color);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  .checkbox:checked ~ .background {
+    transform: scale(80);
+  }
+
+  .checkbox:checked ~ .content {
+    opacity: 1;
+    width: 100%;
+  }
+
+  .icon {
+    position: relative;
+    margin-top: 23px;
+  }
+
+  .icon,
+  .icon::before,
+  .icon::after {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    display: inline-block;
+  }
+
+  .icon::before,
+  .icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+  }
+
+  .icon::before {
+    top: -8px;
+  }
+
+  .icon::after {
+    top: 8px;
+  }
+
+  .button:hover .icon::before {
+    top: -10px;
+  }
+
+  .button:hover .icon::after {
+    top: 10px;
+  }
+
+  .checkbox:checked + .button .icon {
+    background-color: transparent;
+  }
+
+  .checkbox:checked + .button .icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  .checkbox:checked + .button .icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}

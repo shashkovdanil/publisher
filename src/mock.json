@@ -1,0 +1,176 @@
+{
+  "settings": {
+    "slots": ["14:00", "17:00", "22:00"],
+    "accounts": [
+      {
+        "id": "eC48VvS4V8AvLIWz",
+        "social-network": "twitter",
+        "photo": "https://loremflickr.com/200/200"
+      },
+      {
+        "id": "GiFOraflplxFLv55",
+        "social-network": "twitter",
+        "photo": "https://loremflickr.com/200/200"
+      },
+      {
+        "id": "nfj9VCBBuJsoN2gY",
+        "social-network": "facebook",
+        "photo": "https://loremflickr.com/200/200"
+      },
+      {
+        "id": "6AlfBlvaINkECtLt",
+        "social-network": "google+",
+        "photo": "https://loremflickr.com/200/200"
+      },
+      {
+        "id": "7rxd9iv0uwxLx6Zt",
+        "social-network": "youtube",
+        "photo": "https://loremflickr.com/200/200"
+      },
+      {
+        "id": "9dNzmzejwqRlpXS5",
+        "social-network": "instagram",
+        "photo": "https://loremflickr.com/200/200"
+      }
+    ]
+  },
+  "days": {
+    "2018-10-16": {
+      "publications": [
+        {
+          "id": "AjmP0IBKjatn8OoJ",
+          "status": "published",
+          "time": "2018-10-16T22:00",
+          "accounts": [
+            {
+              "id": "6AlfBlvaINkECtLt",
+              "social-network": "google+",
+              "photo": "https://loremflickr.com/200/200"
+            },
+            {
+              "id": "7rxd9iv0uwxLx6Zt",
+              "social-network": "youtube",
+              "photo": "https://loremflickr.com/200/200"
+            },
+            {
+              "id": "9dNzmzejwqRlpXS5",
+              "social-network": "instagram",
+              "photo": "https://loremflickr.com/200/200"
+            }
+          ],
+          "body": "Deserunt velit eu et excepteur est reprehenderit elit id.",
+          "stats": {
+            "followers": 10,
+            "likes": 150,
+            "shared": 55,
+            "comments": 8
+          }
+        },
+        {
+          "id": "KAbEWmKBhUaqeOXN",
+          "status": "published",
+          "time": "2018-10-16T23:00",
+          "accounts": [
+            {
+              "id": "eC48VvS4V8AvLIWz",
+              "social-network": "twitter",
+              "photo": "https://loremflickr.com/200/200"
+            },
+            {
+              "id": "GiFOraflplxFLv55",
+              "social-network": "twitter",
+              "photo": "https://loremflickr.com/200/200"
+            },
+            {
+              "id": "9dNzmzejwqRlpXS5",
+              "social-network": "instagram",
+              "photo": "https://loremflickr.com/200/200"
+            }
+          ],
+          "body": "Ex magna esse esse aute.",
+          "stats": {
+            "followers": 14,
+            "likes": 130,
+            "shared": 70,
+            "comments": 2
+          }
+        }
+      ],
+      "stats": {
+        "followers": 24,
+        "likes": 280,
+        "shared": 125,
+        "comments": 10
+      }
+    },
+    "2018-10-17": {
+      "publications": [
+        {
+          "id": "ne1fK5xBeFzQFvIm",
+          "status": "published",
+          "time": "2018-10-17T23:00",
+          "accounts": [
+            {
+              "id": "eC48VvS4V8AvLIWz",
+              "social-network": "twitter",
+              "photo": "https://loremflickr.com/200/200"
+            },
+            {
+              "id": "GiFOraflplxFLv55",
+              "social-network": "twitter",
+              "photo": "https://loremflickr.com/200/200"
+            },
+            {
+              "id": "nfj9VCBBuJsoN2gY",
+              "social-network": "facebook",
+              "photo": "https://loremflickr.com/200/200"
+            }
+          ],
+          "body": "Ut consequat aliqua reprehenderit esse elit nisi amet fugiat cupidatat occaecat.",
+          "stats": {
+            "followers": 0,
+            "likes": 0,
+            "shared": 0,
+            "comments": 0
+          }
+        },
+        {
+          "id": "PYokqFu5scPpEwTa",
+          "status": "published",
+          "time": "2018-10-17T23:20",
+          "accounts": [
+            {
+              "id": "nfj9VCBBuJsoN2gY",
+              "social-network": "facebook",
+              "photo": "https://loremflickr.com/200/200"
+            },
+            {
+              "id": "6AlfBlvaINkECtLt",
+              "social-network": "google+",
+              "photo": "https://loremflickr.com/200/200"
+            }
+          ],
+          "body": "Aliqua cillum irure veniam ex commodo.",
+          "stats": {
+            "followers": 0,
+            "likes": 0,
+            "shared": 0,
+            "comments": 0
+          }
+        }
+      ],
+      "stats": {
+        "followers": 0,
+        "likes": 0,
+        "shared": 0,
+        "comments": 0
+      }
+    }
+  },
+  "total-stats": {
+    "followers": 100,
+    "likes": 500,
+    "shared": 320,
+    "comments": 150
+  }
+}
